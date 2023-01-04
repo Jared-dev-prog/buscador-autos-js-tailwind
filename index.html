@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/styles.css">
+  <title>Buscador de autos</title>
+</head>
+<body class="h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+  <h1 class="text-center text-white text-3xl pt-2 font-bold uppercase">Buscador de autos</h1>
+
+  <div class="flex flex-col items-center justify-center w-3/4 bg-white mx-auto rounded-md p-8 mt-5 shadow-black shadow-xl">
+
+    <form class="w-full">
+      <div class="grid grid-cols-4 gap-6">
+        <div>
+          <label for="marca" class="text-sm font-bold block mb-2">Marca</label>
+          <select id="marca" class="text-sm border-2 w-full py-1 px-1 rounded-md">
+            <option value="">Seleccione</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes Benz">Mercedes Benz</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Ford">Ford</option>
+            <option value="Dodge">Dodge</option>            
+          </select>
+        </div>
+
+        <div>
+          <label for="year" class="text-sm font-bold block mb-2">Año</label>
+          <select id="year" class="text-sm border-2 w-full py-1 px-1 rounded-md">
+            <option value="">Seleccione</option>           
+          </select>
+        </div>
+
+        <div>
+          <label for="minimo" class="text-sm font-bold block mb-2">Precio minimo</label>
+          <select id="minimo" class="text-sm border-2 w-full py-1 px-1 rounded-md">
+            <option value="">Seleccione</option>
+            <option value="20000">20,000</option>
+            <option value="30000">30,000</option>
+            <option value="40000">40,000</option>
+            <option value="50000">50,000</option>
+            <option value="60000">60,000</option>
+            <option value="70000">70,000</option>
+            <option value="80000">80,000</option>
+            <option value="90000">90,000</option>         
+          </select>
+        </div>
+
+        <div>
+          <label for="maximo" class="text-sm font-bold block mb-2">Precio Maximo</label>
+          <select id="maximo" class="text-sm border-2 w-full py-1 px-1 rounded-md">
+            <option value="">Seleccione</option>
+            <option value="20000">20,000</option>
+            <option value="30000">30,000</option>
+            <option value="40000">40,000</option>
+            <option value="50000">50,000</option>
+            <option value="60000">60,000</option>
+            <option value="70000">70,000</option>
+            <option value="80000">80,000</option>
+            <option value="90000">90,000</option>         
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 gap-6 mt-4">
+        <div>
+          <label for="puertas" class="text-sm font-bold block mb-2">Puertas</label>
+          <select id="puertas" class="text-sm border-2 w-full py-1 px-1 rounded-md">
+            <option value="">Seleccione</option>
+            <option value="2">2</option>
+            <option value="4">4</option>       
+          </select>
+        </div>
+
+        <div>
+          <label for="transmision" class="text-sm font-bold block mb-2">Transmisión</label>
+          <select id="transmision" class="text-sm border-2 w-full py-1 px-1 rounded-md">
+            <option value="">Seleccione</option>
+            <option value="automatico">Automática</option>
+            <option value="manual">Manual</option>      
+          </select>
+        </div>
+
+        <div>
+          <label for="color" class="text-sm font-bold block mb-2">Color</label>
+          <select id="color" class="text-sm border-2 w-full py-1 px-1 rounded-md">
+            <option value="">Seleccione</option>
+            <option value="Negro">Negro</option>
+            <option value="Azul">Azul</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Rojo">Rojo</option> 
+          </select>
+        </div>
+      </div>
+    </form>
+
+    <h1 class="mt-10 font-bold uppercase text-2xl">Resultados</h1>
+    <div id="resultado" class="font-bold space-y-2 mt-10 text-sm uppercase">
+
+    </div>
+  </div>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/db.js"></script>
+</body>
+</html>
